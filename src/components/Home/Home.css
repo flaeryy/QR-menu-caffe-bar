@@ -1,0 +1,47 @@
+.home-list {
+  padding: 20px 0px;
+  margin: 0px 16px;
+}
+
+.home-item {
+  display: flex;
+  position: relative;
+  width: 100%;
+  aspect-ratio: 3/1;
+  overflow: hidden;
+
+  object-fit: contain;
+  align-items: center; /* vertically center the child elements */
+  justify-content: center; /* horizontally center the child elements */
+  border-radius: 26px;
+  margin-bottom: 16px;
+  position: relative;
+  text-decoration: none;
+}
+
+.home-item:hover {
+  opacity: 0.8;
+  transition: opacity 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 26px;
+  margin-bottom: 16px;
+  background-color: black;
+  opacity: 0.3;
+}
+
+.home-item h2 {
+  position: relative;
+  color: white;
+  text-align: center;
+  z-index: 2; /* set a higher z-index value for the h2 element */
+  font-size: 28px;
+  letter-spacing: 1px;
+}
