@@ -17,7 +17,7 @@ function useApiSearch(filter) {
 
   const getSearch = async () => {
     const api = await fetch(
-      `http://localhost:1337/api/testiramo?filter=${filter}`
+      `https://strapicms-production-09eb.up.railway.app/api/testiramo?filter=${filter}`
     );
     if (api.ok) {
       const res = await api.json();

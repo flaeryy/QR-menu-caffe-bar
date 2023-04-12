@@ -3,6 +3,17 @@ import "./Details.css";
 import useApi from "../useApi";
 import { useParams, Navigate } from "react-router-dom";
 
+import kc03 from "../../assets/kc03.jpeg";
+import kc025 from "../../assets/kc025.jpeg";
+import kc from "../../assets/kc.jpeg";
+import kr033 from "../../assets/kr033.jpeg";
+import kt from "../../assets/kt.jpeg";
+import ktcn02 from "../../assets/ktcn02.jpeg";
+import lava_cake from "../../assets/lava_cake.jpeg";
+import profiteroli from "../../assets/profiteroli.jpeg";
+import croissant from "../../assets/croissant.jpeg";
+import toast_sandwich from "../../assets/toast_sandwich.jpeg";
+
 function Details() {
   let params = useParams();
 
@@ -24,7 +35,7 @@ function Details() {
             <div className="details-images">
               <img
                 className="details-image"
-                src={`http://localhost:1337${item.attributes.image.data.attributes.url}`}
+                src={require(`../../assets/${item.attributes.image}.jpeg`)}
                 alt="Product Image"
               />
             </div>

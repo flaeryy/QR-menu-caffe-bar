@@ -11,7 +11,9 @@ function useApi(category) {
   }, [category]);
 
   const getCategory = async () => {
-    const api = await fetch(`http://localhost:1337/api/${category}?populate=*`);
+    const api = await fetch(
+      `https://strapicms-production-09eb.up.railway.app/api/${category}`
+    );
     if (api.ok) {
       const res = await api.json();
       setData(res.data);
