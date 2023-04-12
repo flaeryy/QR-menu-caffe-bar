@@ -4,7 +4,7 @@ function useApi(category) {
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
-
+  console.log(category);
   useEffect(() => {
     setLoading(true);
     getCategory();
